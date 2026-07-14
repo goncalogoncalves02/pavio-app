@@ -67,7 +67,7 @@ export const siteContent: SiteContent = {
     {
       question: "Fazem envios?",
       answer:
-        "Sim, fazemos envios para todo o território nacional. A entrega local ou recolha pode estar disponível consoante a zona e é combinada antes da confirmação.",
+        "Sim, fazemos envios para Portugal continental. A entrega local ou recolha pode estar disponível consoante a zona e é combinada antes da confirmação.",
     },
     {
       question: "Com quanta antecedência devo encomendar?",

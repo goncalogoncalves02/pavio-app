@@ -12,7 +12,7 @@ export function Hero() {
           Velas artísticas e personalizadas, moldadas em ceras naturais sem parafina e perfumadas com óleos naturais — para oferecer, celebrar ou transformar um espaço.
         </p>
         <ContactActions />
-        <p className="hero-note">Orçamento personalizado · Envio nacional</p>
+        <p className="hero-note">Orçamento personalizado · Envio para Portugal continental</p>
       </div>
       <div className="hero-artwork">
         <div className="hero-image-frame">

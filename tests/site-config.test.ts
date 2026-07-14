@@ -26,6 +26,13 @@ describe("resolveSiteOrigin", () => {
       isPublic: false,
     });
   });
+
+  it("recusa uma origem pública sem HTTPS", () => {
+    expect(resolveSiteOrigin("http://atelier.example")).toEqual({
+      origin: "http://localhost:3000",
+      isPublic: false,
+    });
+  });
 });
 
 describe("normalizeExternalUrl", () => {

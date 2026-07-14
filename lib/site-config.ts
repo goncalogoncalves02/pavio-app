@@ -15,7 +15,7 @@ export function resolveSiteOrigin(_value?: string): ResolvedSiteOrigin {
   try {
     const url = new URL(value);
 
-    if (url.protocol !== "http:" && url.protocol !== "https:") {
+    if (url.protocol !== "https:") {
       return { origin: DEVELOPMENT_ORIGIN, isPublic: false };
     }
 
