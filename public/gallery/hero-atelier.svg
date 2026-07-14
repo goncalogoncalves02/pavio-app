@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1120" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8c5a9"/><stop offset="1" stop-color="#9aa88e"/></linearGradient>
+    <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#d8cbb9"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#4a3d31" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="960" height="1120" fill="url(#bg)"/>
+  <circle cx="795" cy="170" r="230" fill="#f1e7d4" opacity=".32"/>
+  <path d="M0 860C205 725 365 897 568 804c160-73 265-29 392 45v271H0z" fill="#695d48" opacity=".22"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="490" cy="913" rx="286" ry="66" fill="#5d4f40" opacity=".22"/>
+    <path d="M260 565c0-54 44-98 98-98h130c54 0 98 44 98 98v329H260z" fill="#b96849"/>
+    <ellipse cx="423" cy="565" rx="163" ry="74" fill="#d98564"/>
+    <path d="M322 614c32 19 61-12 89 5 29 17 54-10 84 4v271H322z" fill="#af5b40" opacity=".55"/>
+    <path d="M490 405c0-37 30-67 67-67h71c37 0 67 30 67 67v489H490z" fill="url(#wax)"/>
+    <ellipse cx="592" cy="406" rx="102" ry="45" fill="#fff9ec"/>
+    <path d="M592 354c-27-27-9-68 13-91 24 30 29 67-13 91z" fill="#bd5d35"/>
+    <path d="M595 352v55" stroke="#4f4031" stroke-width="6" stroke-linecap="round"/>
+    <path d="M594 278c-4 28-15 40-2 58" fill="none" stroke="#f1bd6e" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#314235" stroke-width="9" stroke-linecap="round" opacity=".72">
+    <path d="M164 841c31-180 26-339-9-498"/>
+    <path d="M168 655c-73-43-84-96-74-143"/>
+    <path d="M166 570c62-37 81-92 73-144"/>
+  </g>
+  <g fill="#7f947a">
+    <ellipse cx="101" cy="518" rx="48" ry="19" transform="rotate(47 101 518)"/>
+    <ellipse cx="226" cy="439" rx="55" ry="21" transform="rotate(-48 226 439)"/>
+    <ellipse cx="116" cy="662" rx="58" ry="23" transform="rotate(36 116 662)"/>
+  </g>
+  <g fill="#eee2c7"><circle cx="192" cy="734" r="15"/><circle cx="220" cy="762" r="11"/><circle cx="145" cy="768" r="13"/></g>
+</svg>

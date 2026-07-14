@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 980">
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eadac7"/><stop offset="1" stop-color="#b97b5e"/></linearGradient><filter id="s"><feDropShadow dy="20" stdDeviation="18" flood-color="#573d32" flood-opacity=".22"/></filter></defs>
+  <rect width="800" height="980" fill="url(#b)"/><path d="M0 198C180 49 327 143 493 65c132-62 236-26 307 4V0H0z" fill="#f7efe2" opacity=".46"/>
+  <ellipse cx="402" cy="825" rx="264" ry="62" fill="#69483a" opacity=".18"/>
+  <g filter="url(#s)"><path d="M217 403c0-47 38-85 85-85h202c47 0 85 38 85 85v402H217z" fill="#bd684b"/><path d="M217 474c78-55 129 47 197-4 68-51 117 43 175-11v346H217z" fill="#d88965"/><path d="M217 595c74-51 124 48 196-4 70-50 116 44 176-10v224H217z" fill="#a9553e" opacity=".76"/><ellipse cx="403" cy="403" rx="186" ry="78" fill="#db9570"/><path d="M403 348c-25-26-5-67 15-88 22 29 25 65-15 88z" fill="#b24d30"/><path d="M407 347v59" stroke="#514034" stroke-width="6"/></g>
+  <circle cx="648" cy="713" r="73" fill="none" stroke="#f2dcc5" stroke-width="3" opacity=".65"/>
+</svg>
