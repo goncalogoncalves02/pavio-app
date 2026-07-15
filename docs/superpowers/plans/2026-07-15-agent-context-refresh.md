@@ -1,6 +1,6 @@
 # Agent Context Refresh Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use only superpowers:subagent-driven-development to implement this plan task-by-task. Do not use superpowers:executing-plans while it requires Git worktrees. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Atualizar o `AGENTS.md` com o estado atual da Pavio e o fluxo de trabalho durável acordado com o proprietário.
 
