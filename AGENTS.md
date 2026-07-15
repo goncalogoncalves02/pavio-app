@@ -11,6 +11,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Pavio Atelier Natural is a Portuguese institutional and lead-generation site for handmade artistic candles made with natural waxes.
 - The public experience is intentionally simple: a single-page presentation plus `/politica-de-privacidade`. There is no shop, checkout, backend, form, account system, or price catalogue.
 - Conversion happens through WhatsApp or Instagram so each personalised request can be discussed and quoted directly.
+- The business is based in Setúbal. It has no public customer-facing address; collection in Setúbal is arranged directly, and orders can be shipped to mainland Portugal. Never invent or expose an address, postcode, map pin or opening hours.
 - All public-facing copy must be European Portuguese (`pt-PT`). Do not introduce Brazilian Portuguese wording.
 - The current visual baseline is the “Pavio Luxo” redesign merged in PR #1. Preserve its editorial, artisanal and premium direction unless the user requests a redesign.
 

@@ -49,12 +49,28 @@ export type Story = {
   };
 };
 
+export type BusinessDetails = {
+  locality: string;
+  countryName: string;
+  shippingArea: string;
+  pickupLabel: string;
+};
+
+export type SeoContent = {
+  title: string;
+  description: string;
+};
+
 export type SiteContent = {
   brand: {
     name: string;
     shortName: string;
     tagline: string;
+    logoPath: `/${string}`;
+    logoAlt: string;
   };
+  business: BusinessDetails;
+  seo: SeoContent;
   navigation: NavigationItem[];
   seals: Seal[];
   benefits: Benefit[];

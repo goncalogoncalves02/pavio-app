@@ -3,6 +3,23 @@ import { describe, expect, it } from "vitest";
 import { siteContent } from "@/content/site";
 
 describe("siteContent", () => {
+  it("expõe a identidade e os factos locais verificados", () => {
+    expect(siteContent.brand.logoPath).toBe("/brand/pavio-logo.png");
+    expect(siteContent.brand.logoAlt).toBe(
+      "Pavio — Velas que acendem momentos",
+    );
+    expect(siteContent.business).toEqual({
+      locality: "Setúbal",
+      countryName: "Portugal",
+      shippingArea: "Portugal continental",
+      pickupLabel: "Recolha em Setúbal a combinar",
+    });
+    expect(siteContent.seo.title).toBe(
+      "Velas artesanais personalizadas em Setúbal | Pavio",
+    );
+    expect(siteContent.seo.description).toContain("feitas à mão em Setúbal");
+  });
+
   it("expõe quatro selos com textos completos", () => {
     expect(siteContent.seals).toHaveLength(4);
     for (const seal of siteContent.seals) {

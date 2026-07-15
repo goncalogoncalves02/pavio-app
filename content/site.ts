@@ -4,7 +4,20 @@ export const siteContent: SiteContent = {
   brand: {
     name: "Pavio Atelier Natural",
     shortName: "Pavio",
-    tagline: "Velas artísticas, feitas para cada história.",
+    tagline: "Velas que acendem momentos.",
+    logoPath: "/brand/pavio-logo.png",
+    logoAlt: "Pavio — Velas que acendem momentos",
+  },
+  business: {
+    locality: "Setúbal",
+    countryName: "Portugal",
+    shippingArea: "Portugal continental",
+    pickupLabel: "Recolha em Setúbal a combinar",
+  },
+  seo: {
+    title: "Velas artesanais personalizadas em Setúbal | Pavio",
+    description:
+      "Velas artísticas e personalizadas em ceras naturais, feitas à mão em Setúbal. Recolha a combinar e envios para Portugal continental.",
   },
   navigation: [
     { label: "Atelier", href: "#atelier" },
