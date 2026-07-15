@@ -29,7 +29,7 @@
 - Modify: `app/globals.css` (replace entire file with the redesigned stylesheet)
 
 **Interfaces:**
-- Produces: CSS custom properties (`--paper`, `--ink`, `--terracotta`, `--gold`, `--gold-soft`, `--gold-muted`, `--forest`, `--forest-deep`, `--paper-warm`, `--line`, `--line-light`, `--serif`, `--sans`) and all semantic classes used by Tasks 3–8: `.accent`, `.eyebrow`, `.eyebrow--plain`, `.nav-cta`, `.brand-halo`, `.seals-section`, `.seal-grid`, `.seal`, `.seal-label`, `.seal-title`, `.seal-note`, `.story-section`, `.story-artwork`, `.story-image-frame`, `.story-copy`, `.story-signature`, `.testimonials-section`, `.testimonial-grid`, `.testimonial`, `.testimonial-mark`, `.button--gold`, `.text-link--light`, `.contact-flame`, `.contact-flame-halo`, `.contact-flame-fire`.
+- Produces: CSS custom properties (`--paper`, `--ink`, `--terracotta`, `--gold`, `--gold-soft`, `--gold-muted`, `--forest`, `--forest-deep`, `--paper-warm`, `--line`, `--line-light`, `--serif`, `--sans`) and all semantic classes used by Tasks 3–8: `.accent`, `.eyebrow`, `.eyebrow--plain`, `.nav-cta`, `.brand-halo`, `.seals-section`, `.seal-grid`, `.seal`, `.seal-label`, `.seal-title`, `.seal-note`, `.story-section`, `.story-image-frame`, `.story-copy`, `.story-signature`, `.testimonials-section`, `.testimonial-grid`, `.testimonial`, `.testimonial-mark`, `.button--gold`, `.text-link--light`, `.contact-flame`, `.contact-flame-halo`, `.contact-flame-fire`.
 
 - [ ] **Step 1: Read the bundled font docs**
 
