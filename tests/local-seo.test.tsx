@@ -29,20 +29,27 @@ describe("conteúdo local visível", () => {
     expect(html).not.toContain("morada");
   });
 
-  it("mantém a recolha em Setúbal quando a área de serviço é mais ampla", async () => {
+  it("aplica a área de serviço aos contactos sem alterar a recolha em Setúbal", async () => {
     vi.stubEnv("NEXT_PUBLIC_SERVICE_AREA", "Palmela e Setúbal");
     vi.resetModules();
 
     const { siteConfig } = await import("@/config/site");
+    const { Contacts: ContactsWithServiceArea } = await import(
+      "@/components/contacts"
+    );
     const { OrderProcess: OrderProcessWithServiceArea } = await import(
       "@/components/order-process"
     );
 
     expect(siteConfig.serviceArea).toBe("Palmela e Setúbal");
 
-    const html = renderToStaticMarkup(<OrderProcessWithServiceArea />);
+    const contactsHtml = renderToStaticMarkup(<ContactsWithServiceArea />);
+    const orderProcessHtml = renderToStaticMarkup(
+      <OrderProcessWithServiceArea />,
+    );
 
-    expect(html).toContain("recolha em Setúbal");
-    expect(html).not.toContain("recolha em Palmela");
+    expect(contactsHtml).toContain("Esteja em Palmela e Setúbal");
+    expect(orderProcessHtml).toContain("recolha em Setúbal");
+    expect(orderProcessHtml).not.toContain("recolha em Palmela");
   });
 });

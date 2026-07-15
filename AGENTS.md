@@ -43,7 +43,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 - SEO surfaces include metadata and canonicals in `app/layout.tsx`, JSON-LD in `app/page.tsx`, the generated Open Graph image, `robots.ts` and `sitemap.ts`. Keep them aligned when the brand, URL or page structure changes.
 - `NEXT_PUBLIC_SITE_URL` must be a valid HTTPS origin. When it is absent or invalid, the app deliberately falls back to localhost and disables indexing; set the real value before production launch.
-- `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_INSTAGRAM_URL` and `NEXT_PUBLIC_SERVICE_AREA` are optional. Never invent placeholder contact details; preserve the current honest UI fallbacks.
+- `NEXT_PUBLIC_WHATSAPP_NUMBER`, `NEXT_PUBLIC_INSTAGRAM_URL` and `NEXT_PUBLIC_SERVICE_AREA` are optional. `NEXT_PUBLIC_SERVICE_AREA` controls only the local service/discovery area shown in Contacts; it must never change the Setúbal collection point in Hero, OrderProcess, FAQ or JSON-LD. Never invent placeholder contact details; preserve the current honest UI fallbacks.
 - The privacy page states that there are no forms or first-party analytics. Update it before adding tracking, forms or any new personal-data processing.
 - Environment variable names and safe empty examples belong in `.env.example`; never commit real secrets or local `.env` files.
 
