@@ -10,7 +10,7 @@ export function Testimonials() {
       <div className="testimonial-grid">
         {siteContent.testimonials.map((testimonial) => (
           <figure className="testimonial" data-reveal key={testimonial.author}>
-            <span className="testimonial-mark" aria-hidden="true">&quot;</span>
+            <span className="testimonial-mark" aria-hidden="true">“</span>
             <blockquote>{testimonial.quote}</blockquote>
             <figcaption>{testimonial.author}</figcaption>
           </figure>
