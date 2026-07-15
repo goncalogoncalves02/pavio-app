@@ -7,6 +7,7 @@ import { Hero } from "@/components/hero";
 import { Materials } from "@/components/materials";
 import { OrderProcess } from "@/components/order-process";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { Seals } from "@/components/seals";
 import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site";
 
@@ -45,6 +46,7 @@ export default function Home() {
       <Header />
       <main id="conteudo">
         <Hero />
+        <Seals />
         <Materials />
         <Gallery />
         <OrderProcess />
