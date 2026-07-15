@@ -29,6 +29,26 @@ export type FaqItem = {
   answer: string;
 };
 
+export type Seal = {
+  label: string;
+  title: string;
+  description: string;
+};
+
+export type Testimonial = {
+  quote: string;
+  author: string;
+};
+
+export type Story = {
+  paragraphs: string[];
+  signature: string;
+  portrait: {
+    src: string;
+    alt: string;
+  };
+};
+
 export type SiteContent = {
   brand: {
     name: string;
@@ -36,8 +56,11 @@ export type SiteContent = {
     tagline: string;
   };
   navigation: NavigationItem[];
+  seals: Seal[];
   benefits: Benefit[];
+  story: Story;
   orderSteps: OrderStep[];
+  testimonials: Testimonial[];
   faqs: FaqItem[];
   defaultWhatsAppMessage: string;
 };
