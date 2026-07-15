@@ -12,29 +12,21 @@ import { Story } from "@/components/story";
 import { Testimonials } from "@/components/testimonials";
 import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site";
+import { buildHomeStructuredData } from "@/lib/structured-data";
 
 export default function Home() {
-  const organization = {
-    "@type": "Organization",
-    "@id": `${siteConfig.origin}/#organization`,
+  const jsonLd = buildHomeStructuredData({
+    origin: siteConfig.origin,
     name: siteContent.brand.name,
-    url: siteConfig.origin,
-    ...(siteConfig.instagramUrl ? { sameAs: [siteConfig.instagramUrl] } : {}),
-  };
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      organization,
-      {
-        "@type": "WebSite",
-        "@id": `${siteConfig.origin}/#website`,
-        name: siteContent.brand.name,
-        url: siteConfig.origin,
-        inLanguage: "pt-PT",
-        publisher: { "@id": `${siteConfig.origin}/#organization` },
-      },
-    ],
-  };
+    description: siteContent.seo.description,
+    logoPath: siteContent.brand.logoPath,
+    instagramUrl: siteConfig.instagramUrl,
+    whatsappNumber: siteConfig.whatsappNumber,
+    locality: siteContent.business.locality,
+    countryName: siteContent.business.countryName,
+    shippingArea: siteContent.business.shippingArea,
+    faqs: siteContent.faqs,
+  });
 
   return (
     <>

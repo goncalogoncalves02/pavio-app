@@ -78,13 +78,9 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
   gap: 2rem;
   border-bottom: 1px solid var(--line);
 }
-.brand { display: inline-flex; align-items: center; gap: .9rem; flex: none; }
-.brand > span:last-child { display: flex; flex-direction: column; line-height: 1; }
-.brand strong { font-family: var(--serif); font-size: 1.7rem; font-weight: 500; letter-spacing: .02em; }
-.brand small { margin-top: .4rem; color: var(--gold); font-size: .58rem; letter-spacing: .3em; text-transform: uppercase; }
-.brand-mark { position: relative; width: 30px; height: 42px; border: 1px solid var(--ink); border-radius: 50% 50% 46% 46%; flex: none; }
-.brand-halo { position: absolute; top: 6px; left: 8px; width: 12px; height: 16px; background: radial-gradient(circle at 50% 80%, rgba(169, 138, 91, .55), transparent 70%); border-radius: 50%; animation: halo 3.2s ease-in-out infinite; }
-.brand-flame { position: absolute; top: 7px; left: 11px; width: 8px; height: 14px; background: var(--terracotta); border-radius: 70% 30% 60% 40%; transform-origin: 50% 100%; animation: flicker 2.8s ease-in-out infinite; }
+.brand { display: inline-flex; align-items: center; flex: none; }
+.brand-logo { position: relative; width: 190px; height: 100px; display: block; overflow: hidden; flex: none; }
+.brand-logo img { position: absolute; top: -77px; left: -44px; width: 262px; max-width: none; height: auto; }
 .site-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2rem; margin: 0; padding: 0; list-style: none; }
 .site-nav a { position: relative; padding: .6rem 0; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .site-nav a:not(.nav-cta)::after { position: absolute; right: 0; bottom: .35rem; left: 0; height: 1px; background: var(--terracotta); content: ""; transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
@@ -252,6 +248,8 @@ h2 { margin-bottom: 1.5rem; font-size: clamp(2.6rem, 4.8vw, 4.5rem); line-height
 
 @media (max-width: 760px) {
   .site-header { width: min(100% - 32px, 680px); display: block; }
+  .brand-logo { width: 150px; height: 79px; }
+  .brand-logo img { top: -61px; left: -35px; width: 207px; }
   .site-nav { margin-top: 1.25rem; justify-content: flex-start; gap: .5rem 1rem; }
   .site-nav a { font-size: .64rem; }
   .site-nav .nav-cta { padding: .5rem 1rem; }

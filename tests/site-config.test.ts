@@ -2,8 +2,22 @@ import { describe, expect, it } from "vitest";
 
 import {
   normalizeExternalUrl,
+  resolveServiceArea,
   resolveSiteOrigin,
 } from "@/lib/site-config";
+
+describe("resolveServiceArea", () => {
+  it("usa Setúbal quando a configuração está vazia", () => {
+    expect(resolveServiceArea(undefined, "Setúbal")).toBe("Setúbal");
+    expect(resolveServiceArea("   ", "Setúbal")).toBe("Setúbal");
+  });
+
+  it("preserva uma área de serviço configurada", () => {
+    expect(resolveServiceArea(" Palmela e Setúbal ", "Setúbal")).toBe(
+      "Palmela e Setúbal",
+    );
+  });
+});
 
 describe("resolveSiteOrigin", () => {
   it("usa localhost e desativa indexação sem URL pública", () => {

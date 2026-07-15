@@ -20,16 +20,13 @@ const sans = Karla({
   display: "swap",
 });
 
-const description =
-  "Velas artísticas e personalizadas em ceras naturais sem parafina, criadas à mão para presentes, celebrações e decoração.";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.origin),
   title: {
-    default: "Pavio Atelier Natural | Velas artísticas personalizadas",
+    default: siteContent.seo.title,
     template: "%s | Pavio Atelier Natural",
   },
-  description,
+  description: siteContent.seo.description,
   applicationName: siteContent.brand.name,
   alternates: { canonical: "/" },
   openGraph: {
@@ -37,8 +34,8 @@ export const metadata: Metadata = {
     locale: "pt_PT",
     url: "/",
     siteName: siteContent.brand.name,
-    title: "Pavio Atelier Natural | Velas artísticas personalizadas",
-    description,
+    title: siteContent.seo.title,
+    description: siteContent.seo.description,
     images: [
       {
         url: "/opengraph-image",
@@ -50,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavio Atelier Natural | Velas artísticas personalizadas",
-    description,
+    title: siteContent.seo.title,
+    description: siteContent.seo.description,
     images: ["/opengraph-image"],
   },
   robots: siteConfig.isPublicOriginConfigured

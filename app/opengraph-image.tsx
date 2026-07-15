@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 
+import { siteContent } from "@/content/site";
+
 export const alt = "Pavio Atelier Natural — velas artísticas e personalizadas";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -24,7 +26,7 @@ export default function OpenGraphImage() {
           Pavio · Atelier Natural
         </div>
         <div style={{ marginTop: 36, fontSize: 74, lineHeight: 1.04 }}>
-          Velas artísticas, feitas para cada história.
+          {siteContent.brand.tagline}
         </div>
         <div style={{ marginTop: 34, fontFamily: "Arial, sans-serif", fontSize: 24, color: "#5c675c" }}>
           Ceras naturais · Personalização · Feito à mão

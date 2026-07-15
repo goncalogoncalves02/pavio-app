@@ -1,18 +1,19 @@
 import Image from "next/image";
 
 import { ContactActions } from "@/components/contact-actions";
+import { siteContent } from "@/content/site";
 
 export function Hero() {
   return (
     <section className="hero" id="inicio" aria-labelledby="hero-title">
       <div className="hero-copy">
-        <p className="eyebrow">Feitas à mão · Ceras 100% naturais</p>
+        <p className="eyebrow">Atelier em {siteContent.business.locality} · Ceras 100% naturais</p>
         <h1 id="hero-title">A luz de uma peça única, <em className="accent">criada</em> para a sua história.</h1>
         <p className="hero-intro">
           Velas artísticas e personalizadas, moldadas em ceras naturais sem parafina e perfumadas com óleos naturais — para oferecer, celebrar ou transformar um espaço.
         </p>
         <ContactActions secondary={{ href: "#galeria", label: "Ver a galeria", symbol: "↓" }} />
-        <p className="hero-note">Orçamento personalizado · Envio para Portugal continental</p>
+        <p className="hero-note">{siteContent.business.pickupLabel} · Envio para {siteContent.business.shippingArea}</p>
       </div>
       <div className="hero-artwork" data-reveal>
         <div className="hero-image-frame">

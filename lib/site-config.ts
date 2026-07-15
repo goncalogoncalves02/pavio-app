@@ -5,6 +5,13 @@ export type ResolvedSiteOrigin = {
   isPublic: boolean;
 };
 
+export function resolveServiceArea(
+  value: string | undefined,
+  fallback: string,
+): string {
+  return value?.trim() || fallback;
+}
+
 export function resolveSiteOrigin(_value?: string): ResolvedSiteOrigin {
   const value = _value?.trim();
 

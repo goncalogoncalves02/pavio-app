@@ -1,8 +1,16 @@
+import { siteContent } from "@/content/site";
 import { normalizeWhatsAppNumber } from "@/lib/contact";
-import { normalizeExternalUrl, resolveSiteOrigin } from "@/lib/site-config";
+import {
+  normalizeExternalUrl,
+  resolveServiceArea,
+  resolveSiteOrigin,
+} from "@/lib/site-config";
 
 const resolvedOrigin = resolveSiteOrigin(process.env.NEXT_PUBLIC_SITE_URL);
-const serviceArea = process.env.NEXT_PUBLIC_SERVICE_AREA?.trim() || null;
+const serviceArea = resolveServiceArea(
+  process.env.NEXT_PUBLIC_SERVICE_AREA,
+  siteContent.business.locality,
+);
 
 export const siteConfig = {
   origin: resolvedOrigin.origin,
