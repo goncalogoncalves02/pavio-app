@@ -15,7 +15,7 @@ export function OrderProcess() {
       </ol>
       <div className="shipping-note" data-reveal>
         <span className="shipping-icon" aria-hidden="true">⌁</span>
-        <div><h3>Do atelier até si</h3><p>Fazemos envios para Portugal continental. A entrega local ou recolha é combinada consoante a zona{siteConfig.serviceArea ? ` — atualmente, ${siteConfig.serviceArea}` : " e a disponibilidade do atelier"}.</p></div>
+        <div><h3>Do atelier até si</h3><p>Fazemos envios para {siteContent.business.shippingArea}. A recolha em {siteConfig.serviceArea} é combinada diretamente com o atelier após confirmação da encomenda.</p></div>
       </div>
     </section>
   );

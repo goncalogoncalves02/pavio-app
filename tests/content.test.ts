@@ -20,6 +20,15 @@ describe("siteContent", () => {
     expect(siteContent.seo.description).toContain("feitas à mão em Setúbal");
   });
 
+  it("responde de forma explícita sobre a recolha em Setúbal", () => {
+    const pickupFaq = siteContent.faqs.find(
+      (item) => item.question === "Posso recolher a encomenda em Setúbal?",
+    );
+
+    expect(pickupFaq?.answer).toContain("recolha em Setúbal");
+    expect(pickupFaq?.answer).toContain("após confirmação da encomenda");
+  });
+
   it("expõe quatro selos com textos completos", () => {
     expect(siteContent.seals).toHaveLength(4);
     for (const seal of siteContent.seals) {

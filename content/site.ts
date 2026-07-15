@@ -45,7 +45,7 @@ export const siteContent: SiteContent = {
     },
     {
       label: "Selo · 04",
-      title: "Feito à mão em Portugal",
+      title: "Feito à mão em Setúbal",
       description: "Pequenos lotes, moldados no nosso atelier.",
     },
   ],
@@ -72,7 +72,7 @@ export const siteContent: SiteContent = {
   story: {
     paragraphs: [
       "O Pavio nasceu de uma mesa de cozinha, de tardes a experimentar ceras vegetais e a perseguir uma ideia simples: que uma vela pode ser, ao mesmo tempo, objeto de arte e gesto de afeto.",
-      "Hoje, cada peça continua a ser moldada uma a uma — sem moldes industriais, sem pressa. Escolhemos matérias que respeitam a natureza e desenhamos cada encomenda em conversa com quem a vai receber.",
+      "Hoje, no nosso atelier em Setúbal, cada peça continua a ser moldada uma a uma — sem moldes industriais, sem pressa. Escolhemos matérias que respeitam a natureza e desenhamos cada encomenda em conversa com quem a vai receber.",
     ],
     signature: "— do atelier Pavio, com as mãos na cera",
     portrait: {
@@ -131,7 +131,12 @@ export const siteContent: SiteContent = {
     {
       question: "Fazem envios?",
       answer:
-        "Sim, fazemos envios para Portugal continental. A entrega local ou recolha pode estar disponível consoante a zona e é combinada antes da confirmação.",
+        "Sim, fazemos envios para Portugal continental. As condições e o valor do envio são confirmados antes de concluir a encomenda.",
+    },
+    {
+      question: "Posso recolher a encomenda em Setúbal?",
+      answer:
+        "Sim. A recolha em Setúbal pode ser combinada diretamente com o atelier, de acordo com a disponibilidade e após confirmação da encomenda.",
     },
     {
       question: "Com quanta antecedência devo encomendar?",
