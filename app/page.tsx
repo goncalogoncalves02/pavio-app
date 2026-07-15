@@ -9,6 +9,7 @@ import { OrderProcess } from "@/components/order-process";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Seals } from "@/components/seals";
 import { Story } from "@/components/story";
+import { Testimonials } from "@/components/testimonials";
 import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site";
 
@@ -52,6 +53,7 @@ export default function Home() {
         <Gallery />
         <Story />
         <OrderProcess />
+        <Testimonials />
         <Faq />
         <Contacts />
       </main>
