@@ -366,7 +366,6 @@ export function Header() {
               height={1254}
               sizes="(max-width: 760px) 150px, 190px"
               loading="eager"
-              fetchPriority="high"
             />
           </span>
         </a>
