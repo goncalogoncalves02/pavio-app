@@ -9,6 +9,7 @@ describe("Header", () => {
 
     expect(html).toContain('class="brand-logo"');
     expect(html).toContain('alt="Pavio — Velas que acendem momentos"');
+    expect(html).toContain('sizes="(max-width: 760px) 207px, 262px"');
     expect(html).toMatch(/pavio-logo\.png/);
     expect(html).not.toContain("brand-mark");
   });

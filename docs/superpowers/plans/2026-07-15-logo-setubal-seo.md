@@ -364,7 +364,7 @@ export function Header() {
               alt={siteContent.brand.logoAlt}
               width={1254}
               height={1254}
-              sizes="(max-width: 760px) 150px, 190px"
+              sizes="(max-width: 760px) 207px, 262px"
               loading="eager"
             />
           </span>
