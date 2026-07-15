@@ -12,7 +12,7 @@ export function Footer() {
         <Link href="/politica-de-privacidade">Política de privacidade</Link>
         {siteConfig.instagramUrl ? <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer">Instagram ↗</a> : null}
       </nav>
-      <p className="footer-meta">© {new Date().getFullYear()} Pavio Atelier Natural</p>
+      <p className="footer-meta">© {new Date().getFullYear()} Pavio Atelier Natural · Ceras naturais, sem parafina</p>
     </footer>
   );
 }

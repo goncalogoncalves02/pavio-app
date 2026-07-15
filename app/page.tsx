@@ -6,6 +6,10 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Materials } from "@/components/materials";
 import { OrderProcess } from "@/components/order-process";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import { Seals } from "@/components/seals";
+import { Story } from "@/components/story";
+import { Testimonials } from "@/components/testimonials";
 import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site";
 
@@ -34,6 +38,7 @@ export default function Home() {
 
   return (
     <>
+      <ScrollReveal />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -43,9 +48,12 @@ export default function Home() {
       <Header />
       <main id="conteudo">
         <Hero />
+        <Seals />
         <Materials />
         <Gallery />
+        <Story />
         <OrderProcess />
+        <Testimonials />
         <Faq />
         <Contacts />
       </main>

@@ -46,3 +46,6 @@ next-env.d.ts
 
 # superpowers execution scratch files
 /.superpowers/
+
+# local AI-agent handoff notes
+/AI_HANDOFF.md
