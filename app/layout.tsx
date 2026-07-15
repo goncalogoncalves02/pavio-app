@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Karla } from "next/font/google";
 
 import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site";
 
 import "./globals.css";
+
+const serif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const sans = Karla({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 const description =
   "Velas artísticas e personalizadas em ceras naturais sem parafina, criadas à mão para presentes, celebrações e decoração.";
@@ -46,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-PT">
+    <html lang="pt-PT" className={`${serif.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );
